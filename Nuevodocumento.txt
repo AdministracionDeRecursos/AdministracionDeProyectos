@@ -1,0 +1,6 @@
+new Misil m1;
+new Edificio e1;
+
+if(m1 = e1){
+  destroyObjetive();
+}
