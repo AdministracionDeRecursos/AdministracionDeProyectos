@@ -11,4 +11,21 @@ public partial class Login : System.Web.UI.Page
     {
 
     }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        try {
+            DataSetTableAdapters.UsuarioTableAdapter obj = new DataSetTableAdapters.UsuarioTableAdapter();
+            String nombreUsuario = obj.spLogin(txtUsuario.Text, txtContraseña.Text).ToString();
+            if (!nombreUsuario.Equals("")) {
+                Session["legajo"] = nombreUsuario;
+                Response.Redirect("vistaUsuario.aspx");
+
+            }
+
+        }
+        catch {
+            lblMensaje.Text = "Usuario/Contraseña incorrectos";
+        }
+    }
 }

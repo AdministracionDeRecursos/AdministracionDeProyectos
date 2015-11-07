@@ -43,25 +43,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Clase 5 - Sitio Web con Web
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "41058"
 	EndProjectSection
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_41058"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\4º Año\Programacion de aplicaciones Distribuidas\Ejemplos en Clases\Clase 5 - Sitio Web con WebForms ABML de Productos en DBFacturacion - WebSite3\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_41058\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_41058"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\4º Año\Programacion de aplicaciones Distribuidas\Ejemplos en Clases\Clase 5 - Sitio Web con WebForms ABML de Productos en DBFacturacion - WebSite3\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_41058\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "41058"
-		SlnRelativePath = "..\..\..\4º Año\Programacion de aplicaciones Distribuidas\Ejemplos en Clases\Clase 5 - Sitio Web con WebForms ABML de Productos en DBFacturacion - WebSite3\"
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
