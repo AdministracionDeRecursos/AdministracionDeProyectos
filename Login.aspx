@@ -70,7 +70,9 @@
 
 
     </pre>
+        
     <div class="container">
+        <!--formulario de login-->
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="login-panel panel panel-default">
@@ -78,24 +80,25 @@
                         <h3 class="panel-title">Por favor ingrese sus datos</h3>
                     </div>
                     <div class="panel-body">
-                            <fieldset>
-                                <asp:TextBox ID="txtUsuario" runat="server" BorderStyle="Solid"></asp:TextBox>
-                                <asp:TextBox ID="txtContraseña" runat="server" BorderStyle="Solid" TextMode="Password"></asp:TextBox>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="remember" type="checkbox" value="Remember Me">Recordarme
-                                    </label>
-                                </div>
-                                <!-- Change this to a button or input when using this as a form -->
-                                <asp:Button ID="btnEntrar" runat="server" OnClick="Button1_Click" Text="Entrar" />
-                                <br />
-                                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
-                            </fieldset>
-                        </div>
+                        <fieldset>
+                            <asp:TextBox ID="txtUsuario" runat="server" BorderStyle="Solid"></asp:TextBox>
+                            <asp:TextBox ID="txtContraseña" runat="server" BorderStyle="Solid" TextMode="Password"></asp:TextBox>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="remember" type="checkbox" value="Remember Me">Recordarme                                   
+                                </label>
+                            </div>
+                            <!-- Change this to a button or input when using this as a form -->
+                            <asp:Button ID="btnEntrar" runat="server" OnClick="Button1_Click" Text="Entrar" />
+                            <br />
+                            <asp:Label ID="lblMensaje" runat="server"></asp:Label>
+                        </fieldset>
+                    </div>
                 </div>
             </div>
-        </div>
-         <!-- Footer -->
+        </div> <!-- Fin formulario de login-->
+        
+        <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">

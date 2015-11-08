@@ -12,7 +12,7 @@
     <link href="css/half-slider.css" rel="stylesheet">
 </head>
 <body>
-    <form id="form1" runat="server">
+    
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         
@@ -221,20 +221,6 @@
         </div>
         <!--fin del menu acordeon-->
 
-        <div class="col-sm-9 col-md-9">
-            <div class="well">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="idProyecto" DataSourceID="SqlDataSource1">
-                    <Columns>
-                        <asp:BoundField DataField="idProyecto" HeaderText="idProyecto" InsertVisible="False" ReadOnly="True" SortExpression="idProyecto" />
-                        <asp:BoundField DataField="nombreProyecto" HeaderText="nombreProyecto" SortExpression="nombreProyecto" />
-                        <asp:BoundField DataField="fechaInicio" HeaderText="fechaInicio" SortExpression="fechaInicio" />
-                        <asp:BoundField DataField="fechaFin" HeaderText="fechaFin" SortExpression="fechaFin" />
-                    </Columns>
-                </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Proyecto]"></asp:SqlDataSource>
-                
-            </div>
-        </div>
     </div>
         <!-- Footer -->
         <footer>
@@ -252,6 +238,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    </form>
+    
 </body>
 </html>

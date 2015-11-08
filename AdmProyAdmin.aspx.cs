@@ -9,6 +9,13 @@ public partial class AdmProyAdmin : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["legajo"].Equals(""))
+        {
+            Response.Redirect("Login.aspx");
+        }
+        else
+        {
+            Response.Write("Legajo del Empleado: " + Session["legajo"].ToString());
+        }
     }
 }
