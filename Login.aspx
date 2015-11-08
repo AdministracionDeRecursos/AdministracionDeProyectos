@@ -14,6 +14,8 @@
     <link href="css/half-slider.css" rel="stylesheet">
 </head>
 <body>
+    <form id="form1" runat="server">
+        
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         
@@ -76,24 +78,20 @@
                         <h3 class="panel-title">Por favor ingrese sus datos</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form">
                             <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Correo Electronico" name="email" type="email" autofocus=""/>
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Contraseña" name="password" type="password" value="">
-                                </div>
+                                <asp:TextBox ID="txtUsuario" runat="server" BorderStyle="Solid"></asp:TextBox>
+                                <asp:TextBox ID="txtContraseña" runat="server" BorderStyle="Solid" TextMode="Password"></asp:TextBox>
                                 <div class="checkbox">
                                     <label>
                                         <input name="remember" type="checkbox" value="Remember Me">Recordarme
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Entrar</a>
+                                <asp:Button ID="btnEntrar" runat="server" OnClick="Button1_Click" Text="Entrar" />
+                                <br />
+                                <asp:Label ID="lblMensaje" runat="server"></asp:Label>
                             </fieldset>
-                        </form>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
@@ -115,5 +113,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    </form>
 </body>
 </html>
