@@ -42,24 +42,24 @@
     
         </p>
         <p>
-            <asp:RadioButton ID="rdBtnDisponibles" Text="Disponibles" runat="server" CssClass="checkbox" />
-    
-        </p>
+            &nbsp;</p>
         <p>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Height="125px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="328px">
+            <asp:GridView ID="tablaPersonal" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Height="125px" Width="328px" AllowPaging="True" DataKeyNames="legajo" OnSelectedIndexChanged="agregarLegajos">
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" />
-                    <asp:BoundField DataField="nombre" HeaderText="Nombre" SortExpression="nombre" />
-                    <asp:BoundField DataField="apellido" HeaderText="Apellido" SortExpression="apellido" />
-                    <asp:BoundField DataField="especialidad" HeaderText="Especialidad" SortExpression="especialidad" />
+                    <asp:BoundField DataField="legajo" HeaderText="legajo" SortExpression="legajo" InsertVisible="False" ReadOnly="True" />
+                    <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
+                    <asp:BoundField DataField="apellido" HeaderText="apellido" SortExpression="apellido" />
+                    <asp:BoundField DataField="especialidad" HeaderText="especialidad" SortExpression="especialidad" />
                 </Columns>
+                <SelectedRowStyle BackColor="Aqua" BorderStyle="Solid" />
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [nombre], [apellido], [especialidad] FROM [Persona]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [legajo], [nombre], [apellido], [especialidad] FROM [Persona]"></asp:SqlDataSource>
         </p>
         <p>
             &nbsp;</p>
         <p>
-            <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn-lg" />
+            <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn-lg" OnClick="btnAceptar_Click" />
         </p>
     </form>
 </body>
